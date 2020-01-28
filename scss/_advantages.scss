@@ -1,0 +1,32 @@
+.advantages_block {
+  margin-bottom: 60px;
+  @include media-768 {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    .advantages_items {
+      justify-content: space-around;
+      @include media-768 {
+        flex-wrap: wrap;
+      }
+
+      .advantages_item {
+        width: 25%;
+        text-align: center;
+        color: #4a4a4a;
+        @include media-768 {
+          width: 40%;
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-bottom: 35px;
+          @include media-567 {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

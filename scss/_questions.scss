@@ -1,0 +1,119 @@
+.questions_block {
+  margin-bottom: 60px;
+
+  .container {
+    @include media-1100 {
+      flex-direction: column-reverse;
+    }
+
+    .form_container {
+      width: 25%;
+      color: #000;
+      @include media-1100 {
+        width: 100%;
+      }
+
+      .form_header {
+        padding: 20px 0;
+        margin-bottom: 25px;
+      }
+
+      form {
+        margin-bottom: 0;
+
+        .form_input {
+          margin-bottom: 25px;
+
+          input {
+            width: 100%;
+            margin: 0;
+            border: 1px solid #656565;
+            border-radius: 0;
+          }
+
+        }
+
+        .form_textarea {
+          height: 175px;
+          @include media-1100 {
+            height: 140px;
+          }
+
+          button {
+            @include media-1100 {
+              width: 35%;
+            }
+          }
+
+          textarea {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #656565;
+            border-radius: 0;
+            resize: none;
+          }
+        }
+      }
+    }
+
+    .ask_container {
+      width: 70%;
+      color: #000;
+      @include media-1100 {
+        width: 100%;
+      }
+
+      .ask_header {
+        padding: 20px 0;
+        margin-bottom: 25px;
+      }
+
+      .ask_text {
+        margin-bottom: 25px;
+      }
+
+      .questions_items {
+
+        .questions_item {
+          cursor: pointer;
+          margin-bottom: 30px;
+          @include media-1600 {
+            margin-bottom: 20px;
+          }
+
+          .show {
+            display: block;
+          }
+
+          .item_header {
+            display: inline;
+            font-size: 20px;
+            color: $blue;
+            border-bottom: 1px dashed $blue;
+            @include media-1600 {
+              font-size: 18px;
+            }
+            @include media-567 {
+              font-size: 16px;
+            }
+          }
+
+          .item_text {
+            display: none;
+            padding: 30px 0 10px 0;
+            @include media-1600 {
+              padding: 20px 0 10px 0;
+            }
+
+          }
+        }
+      }
+
+      .ask_link {
+        display: inline;
+        color: $orange_dark;
+        border-bottom: 1px solid $orange_dark;
+      }
+    }
+  }
+}
